@@ -1,0 +1,25 @@
+name: Refresh data
+on:
+  schedule:
+    - cron: "30 19 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download current CSVs
+        run: |
+          set -e
+          # a 503 means the measurement is unavailable today: keep yesterday's file
+          curl -fsS https://xdatealert.com/api/data/insurance-timeline -o /tmp/t.csv && mv /tmp/t.csv data/new-carrier-insurance-timeline.csv || echo "timeline unavailable"
+          curl -fsS https://xdatealert.com/api/data/feed-history -o /tmp/f.csv && mv /tmp/f.csv data/fmcsa-insurance-feed-observations.csv || echo "feed history unavailable"
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "Data $(date -u +%F)"
+          git push

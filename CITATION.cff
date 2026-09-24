@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "FMCSA trucking insurance data: new-carrier timeline and feed observations"
+message: "If you use this data, please cite it as below."
+type: dataset
+authors:
+  - name: "XDate Alert"
+    website: "https://xdatealert.com"
+url: "https://xdatealert.com/data/new-carrier-insurance-timeline"
+repository-code: "https://github.com/Hallikhe/fmcsa-trucking-insurance-data"
+license: CC-BY-4.0
+keywords:
+  - FMCSA
+  - trucking insurance
+  - motor carrier
+  - BMC-91
+  - insurance cancellation
+  - MOTUS
