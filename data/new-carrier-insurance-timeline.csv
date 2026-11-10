@@ -12,21 +12,21 @@
 # behave alike. It measures FILINGS, so a carrier that bound coverage
 # yesterday may not appear insured until the filing lands.
 #
-# measured_on: 2026-11-08
+# measured_on: 2026-11-09
 # license: CC BY 4.0 — cite XDate Alert, https://xdatealert.com/data/new-carrier-insurance-timeline
 
 event_type,age_bucket,min_days,max_days,carriers,insured,share_insured_pct
-new_authority,0-1 days,0,1,88,2,2.3
-new_authority,2-3 days,2,3,550,34,6.2
-new_authority,4-7 days,4,7,853,134,15.7
-new_authority,8-14 days,8,14,1506,322,21.4
-new_authority,15-21 days,15,21,1294,445,34.4
-new_authority,22-30 days,22,30,1677,673,40.1
-new_authority,31-45 days,31,45,3610,1717,47.6
-reinstatement,0-1 days,0,1,85,85,100
-reinstatement,2-3 days,2,3,140,137,97.9
-reinstatement,4-7 days,4,7,225,223,99.1
-reinstatement,8-14 days,8,14,440,358,81.4
-reinstatement,15-21 days,15,21,470,454,96.6
-reinstatement,22-30 days,22,30,671,510,76
-reinstatement,31-45 days,31,45,1163,1056,90.8
+new_authority,0-1 days,0,1,49,3,6.1
+new_authority,2-3 days,2,3,340,16,4.7
+new_authority,4-7 days,4,7,1104,148,13.4
+new_authority,8-14 days,8,14,1503,323,21.5
+new_authority,15-21 days,15,21,1299,444,34.2
+new_authority,22-30 days,22,30,1487,587,39.5
+new_authority,31-45 days,31,45,3502,1634,46.7
+reinstatement,0-1 days,0,1,55,55,100
+reinstatement,2-3 days,2,3,124,121,97.6
+reinstatement,4-7 days,4,7,248,247,99.6
+reinstatement,8-14 days,8,14,447,366,81.9
+reinstatement,15-21 days,15,21,465,449,96.6
+reinstatement,22-30 days,22,30,606,500,82.5
+reinstatement,31-45 days,31,45,1271,1107,87.1
